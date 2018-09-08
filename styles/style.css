@@ -1,0 +1,67 @@
+body {
+    background-color: white;
+}
+.over-menu {
+    position: static;
+    height: 56px;
+}
+.menu {
+    display: inline-block;
+    position: fixed;
+    z-index: 1000;
+}
+.drop {
+    background-color: #fe0000;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+.albums {
+    display: block;
+    position: relative;
+}
+.menu-content, .albums-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 200px;
+    border-top: 2px solid #6f0104;
+    border-right: 2px solid #6f0104;
+}
+.albums-content {
+    min-width: 150px;
+}
+.menu-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-left: 2px solid #6f0104;
+    border-bottom: 2px solid #6f0104;
+}
+.menu a:hover{
+    background-color: #ddd;
+}
+.menu:hover .menu-content, .albums:hover .albums-content {
+    display: block;
+}
+.menu:hover .drop {
+    background-color: #6f0104;
+}
+.albums .albums-content {
+    top: 0;
+    left: 100%;
+    margin-top: -2px;
+}
+.container {
+    position: relative;
+}
+#main, #ppl {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#main {
+    z-index: 100;
+}
